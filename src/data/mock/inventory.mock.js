@@ -1,0 +1,36 @@
+export const inventoryMock = {
+  items: [
+    { id: 'RM-1001', name: 'Steel Rod 40mm', category: 'Raw Material', uom: 'kg', stock: 1240, reorderLevel: 500, reorderQty: 2000, unitCost: 85, totalValue: 105400, location: 'WH-01/A-12', lastUpdated: '2024-04-17', status: 'active' },
+    { id: 'RM-1002', name: 'Aluminium Sheet 3mm', category: 'Raw Material', uom: 'sheet', stock: 80, reorderLevel: 200, reorderQty: 500, unitCost: 340, totalValue: 27200, location: 'WH-01/B-04', lastUpdated: '2024-04-16', status: 'active' },
+    { id: 'RM-1003', name: 'MS Flat Bar 50x6mm', category: 'Raw Material', uom: 'mtr', stock: 620, reorderLevel: 300, reorderQty: 1000, unitCost: 62, totalValue: 38440, location: 'WH-01/A-08', lastUpdated: '2024-04-17', status: 'active' },
+    { id: 'RM-1004', name: 'Bearing 6204 ZZ', category: 'Raw Material', uom: 'pcs', stock: 45, reorderLevel: 100, reorderQty: 300, unitCost: 180, totalValue: 8100, location: 'WH-03/C-02', lastUpdated: '2024-04-15', status: 'active' },
+    { id: 'RM-1005', name: 'Hydraulic Oil 46', category: 'Consumable', uom: 'ltr', stock: 180, reorderLevel: 300, reorderQty: 500, unitCost: 120, totalValue: 21600, location: 'WH-03/D-01', lastUpdated: '2024-04-14', status: 'active' },
+    { id: 'FG-2001', name: 'Gearbox Housing A1', category: 'Finished Goods', uom: 'pcs', stock: 124, reorderLevel: 50, reorderQty: 200, unitCost: 4200, totalValue: 520800, location: 'WH-02/A-01', lastUpdated: '2024-04-18', status: 'active' },
+    { id: 'FG-2002', name: 'Drive Shaft 32mm', category: 'Finished Goods', uom: 'pcs', stock: 88, reorderLevel: 40, reorderQty: 150, unitCost: 1850, totalValue: 162800, location: 'WH-02/B-03', lastUpdated: '2024-04-17', status: 'active' },
+    { id: 'WIP-3001', name: 'Brake Disc (Semi-finish)', category: 'WIP', uom: 'pcs', stock: 62, reorderLevel: 0, reorderQty: 0, unitCost: 680, totalValue: 42160, location: 'SHOPFLOOR/L3', lastUpdated: '2024-04-18', status: 'active' },
+    { id: 'RM-1006', name: 'M8 Hex Bolt (Gr 8.8)', category: 'Raw Material', uom: 'pcs', stock: 3200, reorderLevel: 5000, reorderQty: 10000, unitCost: 4.5, totalValue: 14400, location: 'WH-03/E-07', lastUpdated: '2024-04-16', status: 'active' },
+    { id: 'RM-1007', name: 'O-Ring 25mm NBR', category: 'Raw Material', uom: 'pcs', stock: 840, reorderLevel: 500, reorderQty: 2000, unitCost: 12, totalValue: 10080, location: 'WH-03/E-09', lastUpdated: '2024-04-13', status: 'active' },
+    { id: 'RM-1008', name: 'Cast Iron Blank 200mm', category: 'Raw Material', uom: 'pcs', stock: 310, reorderLevel: 150, reorderQty: 400, unitCost: 520, totalValue: 161200, location: 'WH-01/C-11', lastUpdated: '2024-04-12', status: 'active' },
+    { id: 'RM-1009', name: 'Stainless Sheet 2mm', category: 'Raw Material', uom: 'sheet', stock: 55, reorderLevel: 100, reorderQty: 200, unitCost: 680, totalValue: 37400, location: 'WH-01/B-07', lastUpdated: '2024-04-11', status: 'inactive' },
+  ],
+
+  movements: [
+    { id: 'MV-001', date: '2024-04-18', item: 'Steel Rod 40mm', itemId: 'RM-1001', type: 'receipt', qty: 500, uom: 'kg', ref: 'GRN-2024-0421', location: 'WH-01/A-12', user: 'Suresh R.' },
+    { id: 'MV-002', date: '2024-04-18', item: 'Gearbox Housing A1', itemId: 'FG-2001', type: 'issue', qty: 50, uom: 'pcs', ref: 'DO-2024-0312', location: 'WH-02/A-01', user: 'Priya M.' },
+    { id: 'MV-003', date: '2024-04-17', item: 'Bearing 6204 ZZ', itemId: 'RM-1004', type: 'issue', qty: 20, uom: 'pcs', ref: 'MO-2024-1120', location: 'WH-03/C-02', user: 'Amit V.' },
+    { id: 'MV-004', date: '2024-04-17', item: 'M8 Hex Bolt', itemId: 'RM-1006', type: 'receipt', qty: 5000, uom: 'pcs', ref: 'GRN-2024-0420', location: 'WH-03/E-07', user: 'Suresh R.' },
+    { id: 'MV-005', date: '2024-04-16', item: 'Aluminium Sheet 3mm', itemId: 'RM-1002', type: 'adjustment', qty: -10, uom: 'sheet', ref: 'ADJ-2024-0088', location: 'WH-01/B-04', user: 'Ravi K.' },
+    { id: 'MV-006', date: '2024-04-16', item: 'Drive Shaft 32mm', itemId: 'FG-2002', type: 'receipt', qty: 30, uom: 'pcs', ref: 'MO-2024-1118', location: 'WH-02/B-03', user: 'Deepak R.' },
+    { id: 'MV-007', date: '2024-04-15', item: 'Hydraulic Oil 46', itemId: 'RM-1005', type: 'issue', qty: 40, uom: 'ltr', ref: 'MNT-2024-0091', location: 'WH-03/D-01', user: 'Ramesh P.' },
+  ],
+
+  categories: ['All', 'Raw Material', 'Finished Goods', 'WIP', 'Consumable'],
+
+  summary: {
+    totalItems: 248,
+    totalValue: 42000000,
+    lowStock: 9,
+    outOfStock: 2,
+    categories: { 'Raw Material': 142, 'Finished Goods': 38, 'WIP': 24, 'Consumable': 44 },
+  },
+};

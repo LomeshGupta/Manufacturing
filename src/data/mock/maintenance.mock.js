@@ -1,0 +1,17 @@
+export const maintenanceMock = {
+  machines: [
+    { id: 'M01', name: 'CNC Machine #1', type: 'CNC', model: 'Mazak QTN-200', location: 'Shop Floor A', status: 'running', lastMaintenance: '2024-03-15', nextMaintenance: '2024-05-15', oee: 82, totalDowntime: 4.5 },
+    { id: 'M02', name: 'CNC Machine #2', type: 'CNC', model: 'Mazak QTN-200', location: 'Shop Floor A', status: 'running', lastMaintenance: '2024-03-20', nextMaintenance: '2024-05-20', oee: 76, totalDowntime: 6.2 },
+    { id: 'M03', name: 'CNC Machine #3', type: 'CNC', model: 'Fanuc α-D21', location: 'Shop Floor A', status: 'stopped', lastMaintenance: '2024-02-10', nextMaintenance: '2024-04-10', oee: 0, totalDowntime: 18.0, alert: 'Spindle bearing failure — urgent repair needed' },
+    { id: 'M04', name: 'Lathe #1', type: 'Lathe', model: 'HMT NH26', location: 'Shop Floor B', status: 'running', lastMaintenance: '2024-04-01', nextMaintenance: '2024-06-01', oee: 91, totalDowntime: 2.0 },
+    { id: 'M05', name: 'Welding Station #1', type: 'Welding', model: 'Lincoln Electric', location: 'Shop Floor C', status: 'running', lastMaintenance: '2024-04-05', nextMaintenance: '2024-06-05', oee: 88, totalDowntime: 1.5 },
+    { id: 'M06', name: 'Press #1', type: 'Press', model: 'Hydraulic 200T', location: 'Shop Floor B', status: 'idle', lastMaintenance: '2024-03-01', nextMaintenance: '2024-05-01', oee: 0, totalDowntime: 0 },
+  ],
+  schedules: [
+    { id: 'MS-2024-0041', machine: 'CNC Machine #3', machineId: 'M03', type: 'corrective', description: 'Replace spindle bearing — urgent', scheduledDate: '2024-04-19', technician: 'Ramesh P.', estimatedHours: 6, status: 'in-progress', priority: 'critical' },
+    { id: 'MS-2024-0040', machine: 'CNC Machine #1', machineId: 'M01', type: 'preventive', description: 'Lubrication & coolant change', scheduledDate: '2024-05-15', technician: 'Dinesh K.', estimatedHours: 2, status: 'scheduled', priority: 'low' },
+    { id: 'MS-2024-0039', machine: 'Lathe #1', machineId: 'M04', type: 'preventive', description: 'Chuck calibration & belt inspection', scheduledDate: '2024-06-01', technician: 'Ramesh P.', estimatedHours: 3, status: 'scheduled', priority: 'medium' },
+    { id: 'MS-2024-0038', machine: 'Press #1', machineId: 'M06', type: 'preventive', description: 'Hydraulic seal replacement', scheduledDate: '2024-05-01', technician: 'Dinesh K.', estimatedHours: 4, status: 'scheduled', priority: 'medium' },
+    { id: 'MS-2024-0037', machine: 'CNC Machine #2', machineId: 'M02', type: 'corrective', description: 'Coolant pump noise investigation', scheduledDate: '2024-04-20', technician: 'Ramesh P.', estimatedHours: 1.5, status: 'pending', priority: 'high' },
+  ],
+};
