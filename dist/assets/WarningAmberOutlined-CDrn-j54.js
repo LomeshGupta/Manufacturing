@@ -1,0 +1,1 @@
+import{az as r,aq as a,ak as t}from"./index-snmSg0-g.js";var e={},u=t;Object.defineProperty(e,"__esModule",{value:!0});var i=e.default=void 0,n=u(r()),o=a;i=e.default=(0,n.default)((0,o.jsx)("path",{d:"M12 5.99 19.53 19H4.47zM12 2 1 21h22zm1 14h-2v2h2zm0-6h-2v4h2z"}),"WarningAmberOutlined");export{i as d};
